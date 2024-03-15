@@ -11,6 +11,6 @@ int main()
 	getTwoValues(begin, end);
 	prime1 = getNextPrime(begin);
 	cout << "The prime number after " << begin << " is " << prime1 << endl;
-	// prime2 = getPrevPrime(end);
-	// cout << "The prime number before " << end << " is " << prime2 << endl;
+	prime2 = getPrevPrime(end);
+	cout << "The prime number before " << end << " is " << prime2 << endl;
 }

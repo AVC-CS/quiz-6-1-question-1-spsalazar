@@ -35,12 +35,23 @@ int getNextPrime(int begin) {
         return nextNum;
 }
 
-// int getPrevPrime(int end) {
-//     isPrime = false;
-//     while (!isPrime) {
-//         for int i = 2; i * i <= 
-//     }
-// }
+int getPrevPrime(int end) {
+   nextNum = end - 1;
+    isPrime = false;
+    while (!isPrime) {
+        isPrime = true;
+        for (int i = 2; i * i <= nextNum; i++) {
+            if (nextNum % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (!isPrime) {
+            nextNum--;
+        }
+    }
+    return nextNum;
+}
 //1 3
 // ******************************
 // Implement all your functions here
